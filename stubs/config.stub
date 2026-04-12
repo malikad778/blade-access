@@ -1,0 +1,46 @@
+return [
+    'paths' => [
+        resource_path('views'),
+    ],
+    'exclude' => [
+        resource_path('views/vendor'),
+        resource_path('views/emails'),
+    ],
+    'livewire' => [
+        'enabled' => true,
+        'component_paths' => [
+            app_path('Livewire'),
+            app_path('Http/Livewire'),
+        ],
+        'view_path' => resource_path('views/livewire'),
+    ],
+    'fail_on' => 'error',
+    'rules' => [
+        'img-missing-alt' => true,
+        'img-alt-too-long' => ['max_length' => 150],
+        'input-missing-label' => true,
+        'input-placeholder-as-label' => 'warning',
+        'button-empty' => true,
+        'link-empty' => true,
+        'link-generic-label' => 'warning',
+        'heading-skipped' => true,
+        'heading-missing-h1' => true,
+        'dialog-missing-role' => true,
+        'html-lang-missing' => true,
+        'tabindex-positive' => 'warning',
+        'skip-link-missing' => 'warning',
+        'livewire-poll-no-pause' => 'warning',
+    ],
+    'baseline' => base_path('blade-ally-baseline.json'),
+    'cache' => [
+        'enabled' => true,
+        'directory' => storage_path('framework/cache/blade-ally'),
+        'ttl' => 3600,
+    ],
+    'reporting' => [
+        'default_format' => 'terminal',
+        'show_fix_hints' => true,
+        'show_wcag_links' => true,
+        'group_by' => 'file',
+    ],
+];
