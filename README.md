@@ -4,6 +4,7 @@
 > Catch WCAG 2.2 AA violations in your PHP source code before a single request is served.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/malikad778/laravel-blade-ally.svg)](https://packagist.org/packages/malikad778/laravel-blade-ally)
+[![Tests](https://github.com/malikad778/blade-access/actions/workflows/tests.yml/badge.svg)](https://github.com/malikad778/blade-access/actions/workflows/tests.yml)
 [![PHP Version](https://img.shields.io/badge/PHP-8.2%2B-blue)](https://php.net)
 [![Laravel Version](https://img.shields.io/badge/Laravel-10%2C%2011%2C%2012-red)](https://laravel.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
