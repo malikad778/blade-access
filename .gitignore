@@ -1,0 +1,9 @@
+/vendor/
+/build/
+/.phpunit.cache/
+composer.phar
+.phpunit.result.cache
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
