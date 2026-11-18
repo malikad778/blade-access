@@ -38,7 +38,7 @@ class AriaRequiredChildrenRule extends AbstractRule
                     $found      = array_intersect($required, $childRoles);
                     if (empty($found) && !empty($node['children'])) {
                         $violations[] = $this->makeViolation($context->filePath, $node['line'] ?? 1, $node['column'] ?? 1,
-                            "role="{$role}" requires child role(s): " . implode(', ', $required) . '.');
+                            "role=\"{$role}\" requires child role(s): " . implode(', ', $required) . '.');
                     }
                 }
             }

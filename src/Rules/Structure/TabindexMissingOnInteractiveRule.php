@@ -27,7 +27,7 @@ class TabindexMissingOnInteractiveRule extends AbstractRule
                 if ($role && in_array($role, $interactiveRoles, true) && !$nativeInteractive) {
                     if (!isset($attrs['tabindex'])) {
                         $violations[] = $this->makeViolation($context->filePath, $node['line'] ?? 1, $node['column'] ?? 1,
-                            "Element with role="{$role}" is missing tabindex="0".");
+                            "Element with role=\"{$role}\" is missing tabindex=\"0\".");
                     }
                 }
             }

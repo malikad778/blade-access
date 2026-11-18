@@ -24,7 +24,7 @@ class AriaLabelledbyTargetMissingRule extends AbstractRule
                     foreach (preg_split('/\s+/', trim($attrs['aria-labelledby'])) as $target) {
                         if ($target && !str_contains($target, '{{') && !$this->idExistsInAst($context->ast, $target)) {
                             $violations[] = $this->makeViolation($context->filePath, $node['line'] ?? 1, $node['column'] ?? 1,
-                                "aria-labelledby references id="{$target}" which was not found in this template.");
+                                "aria-labelledby references id=\"{$target}\" which was not found in this template.");
                         }
                     }
                 }

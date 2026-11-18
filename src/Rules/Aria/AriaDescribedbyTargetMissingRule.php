@@ -24,7 +24,7 @@ class AriaDescribedbyTargetMissingRule extends AbstractRule
                     $target = trim($attrs['aria-describedby']);
                     if ($target && !str_contains($target, '{{') && !$this->idExistsInAst($context->ast, $target)) {
                         $violations[] = $this->makeViolation($context->filePath, $node['line'] ?? 1, $node['column'] ?? 1,
-                            "aria-describedby references id="{$target}" which was not found in this template.");
+                            "aria-describedby references id=\"{$target}\" which was not found in this template.");
                     }
                 }
             }

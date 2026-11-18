@@ -25,7 +25,7 @@ class SkipLinkTargetMissingRule extends AbstractRule
                     $targetId = ltrim($href, '#');
                     if ($targetId && !$this->idExistsInAst($context->ast, $targetId)) {
                         $violations[] = $this->makeViolation($context->filePath, $node['line'] ?? 1, $node['column'] ?? 1,
-                            "Skip link href="{$href}" references id="{$targetId}" which was not found in this template.");
+                            "Skip link href=\"{$href}\" references id=\"{$targetId}\" which was not found in this template.");
                     }
                 }
             }
