@@ -78,4 +78,9 @@ class AriaRoleDefinitions
             'treeitem' => ['aria-label', 'aria-labelledby'],
         ];
     }
+
+    public static function isValidRole(string $role): bool
+    {
+        return array_key_exists(strtolower(trim($role)), self::getRoles());
+    }
 }
